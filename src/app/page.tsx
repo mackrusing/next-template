@@ -1,3 +1,10 @@
+import { HelloWorld } from "@/components/hello-world";
+import { Wrapper } from "@/components/wrapper";
+
 export default function RootPage() {
-  return <main>Hello World!</main>;
+  return (
+    <Wrapper>
+      <HelloWorld />
+    </Wrapper>
+  );
 }
