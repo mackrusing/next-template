@@ -1,9 +1,13 @@
-import { Wrapper } from "@/components/wrapper";
+// actions
+import { getContentData } from "@/actions/content";
+// components
+import MDX from "@/components/MDX";
 
-export default function RootPage() {
+export default async function RootPage() {
+  const content = await getContentData("hello-world.mdx");
   return (
-    <Wrapper>
-      <p>Hello World</p>
-    </Wrapper>
+    <main className="text-xl h-screen w-full flex justify-center items-center">
+      <MDX source={content.content} />
+    </main>
   );
 }
