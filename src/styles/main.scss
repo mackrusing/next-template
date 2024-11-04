@@ -2,48 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+//
+// base styles & variables
+//
+
 @layer base {
-  /* theme variables */
+  //
+  // css variables
+  //
+
+  // global and light mode
   :root {
-    /* foreground-background pairs */
+    // global vars
+    --radius: 0.5rem;
+
+    //
+    // colors (hsl)
+    //
+
+    // main color set
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
+    // primary color set
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
 
+    // secondary color set
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
 
+    // muted color set
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    /* single colors */
+    // other single colors
     --border: 240 5.9% 90%;
-
-    /* non-color (not replicated in dark class) */
-    --radius: 0.5rem;
   }
 
-  /* dark mode color vars */
+  // dark mode
   .dark {
-    /* foreground-background pairs */
+    // main color set
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
+    // primary color set
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
 
+    // secondary color set
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
 
+    // muted color set
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    /* single colors */
+    // other single colors
     --border: 240 3.7% 15.9%;
   }
 }
+
+//
+// resets
+//
 
 @layer base {
   * {

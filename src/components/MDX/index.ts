@@ -1,2 +1,2 @@
-export * from './MDX';
-export { default } from './MDX';
+export * from "./MDX";
+export { default } from "./MDX";

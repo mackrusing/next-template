@@ -3,7 +3,7 @@ import { bodyFont } from "@/styles/fonts";
 // types
 import type { Metadata } from "next";
 // styles
-import "@/styles/main.css";
+import "@/styles/main.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bodyFont.className}>{children}</body>
+      <body className={`dark ${bodyFont.className}`}>{children}</body>
     </html>
   );
 }

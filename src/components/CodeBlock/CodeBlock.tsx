@@ -3,9 +3,5 @@ export default function CodeBlock({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <pre>
-      {children}
-    </pre>
-  );
+  return <pre>{children}</pre>;
 }

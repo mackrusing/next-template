@@ -7,8 +7,8 @@ import path from "path";
 import matter from "gray-matter";
 
 export async function getContentData(filename: string): Promise<{
-  content: string,
-  data: any,
+  content: string;
+  data: any;
 }> {
   const file = await readFile("/src/content/" + filename);
   const parsed = matter(file);
